@@ -7,10 +7,15 @@ Status do Projeto: Em desenvolvimento
 Tecnologias Utilizadas:
 
 Java (linguagem de programação orientada a objetos)
+
 HTML (linguagem de marcação)
+
 JavaScript (linguagem de programação orientada a eventos)
+
 CSS (linguagem de estilização)
+
 Frameworks: Spring (framework Java) e Bootstrap (framework de estilização CSS)
+
 Equipe de Desenvolvedores: Projeto Pessoal
 
 Objetivo do Software: Desenvolver um site que introduza pessoas a diversos assuntos, incentivando a aprendizagem e auxiliando na descoberta de interesses e vocações.

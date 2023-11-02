@@ -42,10 +42,7 @@ Responsividade e facilidade de uso, com desempenho satisfatório.
 
 Design atrativo e intuitivo para uma experiência de usuário agradável.
 
-Controle de qualidade do conteúdo, possivelmente com envolvimento de especialistas nas áreas abordadas.
-
 Promoção da interação dos usuários, incentivando o feedback e o aprendizado colaborativo.
 
 Política de privacidade clara e conformidade com regulamentações de proteção de dados.
 
-Planejamento de sustentabilidade a longo prazo, mesmo sem fins lucrativos, para cobrir custos de hospedagem e manutenção.

@@ -20,17 +20,27 @@ Funcionalidades do Sistema (Requisitos):
 Funcionais:
 
 Cadastro de Usuários: Permitir que os usuários se cadastrem na plataforma, fornecendo informações básicas.
+
 Cadastro de Tópicos: Implementar uma categorização de textos, abrangendo áreas como Tecnologia, Ciências e Biologia.
+
 Cadastro de Textos Informativos: Armazenar textos introdutórios em diversas áreas de conhecimento.
+
 Implementação de Imagens: Associar imagens aos textos informativos na página inicial.
+
 Interação ao Clicar na Imagem ou Descrição: Ao clicar em uma imagem ou descrição, abrir uma nova aba com conteúdo educativo relacionado ao tópico.
 
 Não Funcionais:
 
 Recebimento de informações de usuário e armazenamento em um banco de dados de forma segura.
+
 Responsividade e facilidade de uso, com desempenho satisfatório.
+
 Design atrativo e intuitivo para uma experiência de usuário agradável.
+
 Controle de qualidade do conteúdo, possivelmente com envolvimento de especialistas nas áreas abordadas.
+
 Promoção da interação dos usuários, incentivando o feedback e o aprendizado colaborativo.
+
 Política de privacidade clara e conformidade com regulamentações de proteção de dados.
+
 Planejamento de sustentabilidade a longo prazo, mesmo sem fins lucrativos, para cobrir custos de hospedagem e manutenção.

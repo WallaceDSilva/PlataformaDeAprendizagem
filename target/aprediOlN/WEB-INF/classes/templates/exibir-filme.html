@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Filme</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                <link th:href="@{'/css/' + ${css} + '.css'}" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+    <header th:insert="~{navbar.html :: nav}"></header>
+    <h1>Filme</h1>
+    <p>Bem-vindo!</p>
+    <br>
+    <p>ID: <span th:text="${filme.id}" /></p>
+    <p>Titulo <span th:text="${filme.titulo}" /></p>
+    <p>Sinopse <span th:text="${filme.sinopse}" /></p>
+    <p>Gênero <span th:text="${filme.genero}" /></p>
+    <p>Ano de Lançamento <span th:text="${filme.anoLancamento}" /></p>
+                        <p>O estilo atual da página é <strong th:text="${css}"></strong></p>
+                    <p>Você pode configurar suas preferências de exibição <a href="/preferencias">neste link</a></p>
+</body>
+</html>

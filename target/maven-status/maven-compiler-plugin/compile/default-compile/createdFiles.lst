@@ -1,0 +1,13 @@
+com\api\cinemoteca\data\UsuarioEntity.class
+com\api\cinemoteca\data\TopicoEntity.class
+com\api\cinemoteca\controller\UsuarioController.class
+com\api\cinemoteca\data\TopicoRepository.class
+com\api\cinemoteca\data\UsuarioRepository.class
+com\api\cinemoteca\service\UsuarioService.class
+com\api\cinemoteca\controller\TextoController.class
+com\api\cinemoteca\service\LoginService.class
+com\api\cinemoteca\CinemotecaApplication.class
+com\api\cinemoteca\service\TextoService.class
+com\api\cinemoteca\controller\LoginController.class
+com\api\cinemoteca\data\TextoIF_EntityRepository.class
+com\api\cinemoteca\data\TextoIF_Entity.class

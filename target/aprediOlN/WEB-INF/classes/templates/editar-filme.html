@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Editar Filme</title>
+            <link th:href="@{'/css/' + ${css} + '.css'}" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+    <header th:insert="~{navbar.html :: nav}"></header>
+    <h1>Editar Filme</h1>
+    <form th:action="@{'/editar-filme/' + ${filme.id}}" method="post">
+        <div>
+            <p>Título: <input type="text" th:field="*{filme.titulo}" /></p>
+            <p>Gênero: <input type="text" th:field="*{filme.genero}" /></p>
+            <p>Sinopse: <textarea th:field="*{filme.sinopse}"></textarea></p>
+            <p>Ano de Lançamento: <input type="number" th:field="*{filme.anoLancamento}" /></p>
+        </div>
+        <button type="submit">Salvar</button>
+    </form>
+                        <p>O estilo atual da página é <strong th:text="${css}"></strong></p>
+                    <p>Você pode configurar suas preferências de exibição <a href="/preferencias">neste link</a></p>
+</body>
+</html>

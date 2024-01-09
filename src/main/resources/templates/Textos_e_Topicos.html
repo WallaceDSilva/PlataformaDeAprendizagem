@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+            <title>Exibição de Textos</title>
+            <link rel="stylesheet" th:href="@{/css/TextosMail.css}" />
+            <header th:insert="~{navbar.html :: nav}"></header>
+
+    </head>
+
+    <body>
+
+        <div class="centerDiv">
+            <div th:each="texto : ${ListaTX}" class="textoAli">
+                <span><img th:src="@{'/imagens/' + ${texto.caminhoImage} + '.jpg'}" alt="Minha Imagem" /></span> 
+                <span><h2 class="fontText" th:text="${texto.titulo}"></h2></span>    
+                <span><p class="fontText" th:text="${texto.texto}"></p></span>
+            </div>
+        </div>
+
+
+    </body>
+
+
+
+</html>

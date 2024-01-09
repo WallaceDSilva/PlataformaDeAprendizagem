@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Cadastro de Usuario</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script th:src="@{/js/usuarioValido.js}"></script>
+            <header th:insert="~{navbar.html :: nav}"></header>
+    </head>
+    
+    <body>
+        
+        </header>
+
+        <h1>Cadastro de Usuario</h1>   
+
+        <form id="formulario" th:action="@{/cadastro-usuario}" th:object="${usuario}" method="post">
+            <div>
+
+                <p>Nome:  <input type="text" th:field="*{nome}"/></p>
+                <p>Senha: <input type="text" th:field="*{senha}"/></p>
+                <p>email: <input type="text" th:field="*{email}"/></p>
+
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+
+    </body>
+
+
+
+
+</html>

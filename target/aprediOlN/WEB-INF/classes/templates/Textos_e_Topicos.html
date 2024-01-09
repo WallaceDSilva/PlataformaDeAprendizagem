@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        
+        <title>Exibição de Textos</title>
+    </head>
+
+
+    <body>
+        <div th:each="texto : ${textos}">
+            <h2 th:text="${texto.titulo}"></h2>
+            <p th:text="${texto.texto}"></p>
+        </div>
+    </body>
+
+</html>

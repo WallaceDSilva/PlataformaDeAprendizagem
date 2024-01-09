@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Cadastro de Análises</title>
+            <link th:href="@{'/css/' + ${css} + '.css'}" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+    <header th:insert="~{navbar.html :: nav}"></header>
+    <h1>Cadastro de Análises</h1>
+    <form th:action="@{/cadastro-analise}" th:object="${analise}" method="post">
+        <div>
+            <p>Filme:
+    <select th:field="*{cineentity.id}" id="cineentity" name="cineentity">
+        <option th:each="filme : ${filmes}" th:value="${filme.id}" th:text="${filme.titulo}"></option>
+    </select>
+</p>
+            <p>Análise: <input type="text" th:field="*{analise}" /></p>
+            <p>Nota: <input type="number" th:field="*{nota}" /></p>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+    
+                    <p>O estilo atual da página é <strong th:text="${css}"></strong></p>
+                    <p>Você pode configurar suas preferências de exibição <a href="/preferencias">neste link</a></p>
+</body>
+</html>

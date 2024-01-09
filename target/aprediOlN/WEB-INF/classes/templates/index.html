@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Site - Página Inicial</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link th:href="@{'/css/' + ${css} + '.css'}" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <h1>Olá <span th:text="${nome}"></span>!</h1>
+        <p>Seja muito bem-vindo(a) ao site !</p>
+        <h1> Inicie o processo de cadastramento de usuario!<a href="/cadastro-usuario"> Clique Aqui</a></h1>
+        
+    </body>
+</html>

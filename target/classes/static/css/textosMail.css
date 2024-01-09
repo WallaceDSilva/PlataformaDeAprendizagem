@@ -1,0 +1,36 @@
+
+
+
+
+
+
+img{
+
+    width: 50%;
+   margin-left: 25%
+
+}
+
+
+.fontText{
+    text-align: center;
+    
+
+}
+
+
+
+
+.centerDiv {
+    width: 100%; /* Ajuste a largura conforme necessário */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* ou outro alinhamento que preferir */
+}
+
+.textoAli {
+    width: 30%; /* Ajuste a largura conforme necessário */
+    margin-bottom: 20px; /* Espaçamento entre os elementos */
+}
+
+

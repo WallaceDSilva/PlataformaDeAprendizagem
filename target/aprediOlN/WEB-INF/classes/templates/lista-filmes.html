@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Lista de Filmes</title>
+                <link th:href="@{'/css/' + ${css} + '.css'}" rel="stylesheet" type="text/css"/>
+
+    </head>
+    <body>
+        <header th:insert="~{navbar.html :: nav}"></header>
+        <h1>Lista de Filmes</h1>
+        <p>Essas são todos seus filmes:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Título</th>
+                    <th>Gênero</th>
+                    <th>Ano de Lançamento</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="filme : ${filmes}">
+                    <td th:text="${filme.id}"></td>
+                    <td th:text="${filme.titulo}"></td>
+                    <td th:text="${filme.genero}"></td>
+                    <td th:text="${filme.anoLancamento}"></td>
+                    <td>
+                        <a th:href="@{'/editar-filme/' + ${filme.id}}">
+                            <button>Editar Informações do Filme</button>
+                        </a>
+                        <form th:action="@{'/filmes/deletar/' + ${filme.id}}" method="post">
+                            <button type="submit">Deletar</button>
+                        </form>   
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+                            <p>O estilo atual da página é <strong th:text="${css}"></strong></p>
+                    <p>Você pode configurar suas preferências de exibição <a href="/preferencias">neste link</a></p>
+    </body>
+</html>

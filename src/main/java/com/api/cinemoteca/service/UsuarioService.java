@@ -8,7 +8,7 @@ import com.api.cinemoteca.data.UsuarioRepository;
 
 @Service
 
-public class UsuarioService implements LoginService{
+public class UsuarioService implements LoginService {
 
     @Autowired
 
@@ -16,7 +16,15 @@ public class UsuarioService implements LoginService{
 
     public UsuarioEntity criarUsuario(UsuarioEntity user) {
 
-        user.setId(null);
+        if (validarCredenciais(user.getNome(), user.getSenha())) {
+
+            UsuarioEntity entit = usuarioRepository.findBynome(user.getNome());
+            
+            user.setId(entit.getId());
+            
+        } else {
+            user.setId(null);
+        }
 
         usuarioRepository.save(user);
 
@@ -24,13 +32,14 @@ public class UsuarioService implements LoginService{
 
     }
 
-  @Override
+
+    @Override
     public boolean validarCredenciais(String username, String password) {
         // Implemente a lógica para buscar e validar as credenciais no banco de dados
         UsuarioEntity user = usuarioRepository.findBynome(username);
+
         return user != null && user.getSenha().equals(password);
 
-}
-    
+    }
 
 }

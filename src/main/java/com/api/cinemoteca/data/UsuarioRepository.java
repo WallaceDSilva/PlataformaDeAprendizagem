@@ -10,6 +10,8 @@ public interface UsuarioRepository extends JpaRepository<UsuarioEntity, Integer>
     public UsuarioEntity findById(int id);
     
      public UsuarioEntity findBynome(String username);
+     
+     
 
 }
 
